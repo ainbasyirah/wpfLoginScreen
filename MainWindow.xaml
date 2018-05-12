@@ -1,11 +1,12 @@
-<Window x:Class="Wpflogin1.MainWindow"
+<Window x:Class="WPF_Bustrack.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wpflogin1"
+        xmlns:local="clr-namespace:WPF_Bustrack"
         mc:Ignorable="d"
-        Title="Loginscreen" Height="388.214" Width="379.997" FontSize="14" Background="AntiqueWhite">
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="Loginscreen" Height="500" Width="450" FontSize="14" Background="AntiqueWhite" Icon="icon/login.ico">
     <Border Background="DarkSlateGray" CornerRadius="20" Margin="20">
         <StackPanel Margin="20">
             <Label Content="Login" Foreground="White" FontSize="25" HorizontalAlignment="Center" />
