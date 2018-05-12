@@ -1,13 +1,13 @@
-<Window x:Class="Wpflogin1.profile"
+<Window x:Class="WPF_Bustrack.driverprof2"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wpflogin1"
+        xmlns:local="clr-namespace:WPF_Bustrack"
         mc:Ignorable="d"
-        Title="profile" Height="450" Width="800" Background="AntiqueWhite">
+        Title="driver2" Height="450" Width="800" Background="AntiqueWhite" Icon="icon/user.ico">
     <Grid>
-        <DataGrid Name="g1" AutoGenerateColumns="False">
+        <DataGrid x:Name="g2" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="100"/>
                 <DataGridTextColumn Binding="{Binding Age}" Header="Age" Width="100"/>
@@ -16,6 +16,9 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        <Button x:Name="btnback1" Click="btnback1_Click" Content="Back" Margin="41,339,641.333,24.667" Background="DimGray" Foreground="White" FontSize="20"/>
+
+        <Button x:Name="btngps" Click="btngps_Click" Content="GPS" HorizontalAlignment="Left" Margin="683,360,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btncamera" Click="btncamera_Click" Content="Camera" HorizontalAlignment="Left" Margin="592,360,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.039,-0.034"/>
+
     </Grid>
 </Window>
