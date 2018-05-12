@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Wpflogin1
+namespace WPF_Bustrack
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -68,8 +68,8 @@ namespace Wpflogin1
                     sdr.Read();
                     //user = sdr.GetString(1);  // Name string
                     //password = sdr.GetString(2); // Password string
-                    Screen2 sc2 = new Screen2();
-                    sc2.Show();
+                    gpsmap scgpsmap = new gpsmap();
+                    scgpsmap.Show();
                     this.Close();
 
                 }
@@ -86,8 +86,7 @@ namespace Wpflogin1
             finally
             {
                 sqlCon.Close();
-            }     
+            }
         }
     }
 }
-
